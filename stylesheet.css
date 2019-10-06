@@ -1,18 +1,22 @@
+/*desktop*/
 body{
   background-color: #ffd9cc;
-}
-p{
-  font-size: 14px;
+  font-size: 16px;
   color:#663300;
   font-family:'Roboto', sans-serif;
 }
 h1 {
   font-family: 'Righteous', cursive;
   font-weight: bold;
+  font-size: 35px;
+}
+h2 {
+  font-family: 'Righteous', cursive;
+  font-weight: bold;
+  font-size: 20px;
 }
 #container{
-  width: 400px;
-  height: 100%;
+  width: 60%;
   margin:0 auto;
   text-align: center;
   background-color:#ffe6cc;
@@ -26,15 +30,21 @@ h1 {
 }
 #img{
   height: 340px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 #nav, #link {
   padding:0;
   list-style-type: none;
 }
+#nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 #nav li {
   border-bottom: 1px solid #fff2e6;
   font-family: 'Bree Serif', serif;
+  width: 25%;
 }
 #nav a:link, #nav a:visited {
   display: block;
@@ -69,4 +79,16 @@ img{
 }
 a{
   text-decoration: none;
+}
+
+/*mobile*/
+@media screen and (max-width: 660px) {
+#nav{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#nav li{
+  width: 100%;
+}
 }
