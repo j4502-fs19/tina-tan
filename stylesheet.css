@@ -133,7 +133,7 @@ a{
   grid-area:text4;
 }
 /*tablet*/
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
   #container{
     grid-template-columns: repeat(4,1fr);
     grid-template-areas:
@@ -152,7 +152,7 @@ a{
 }
 
 /*mobile*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #container{
     grid-template-columns: repeat(3,1fr);
     grid-template-areas:
