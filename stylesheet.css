@@ -153,19 +153,23 @@ a{
 
 /*mobile*/
 @media screen and (max-width: 600px) {
+img{
+width: 100%;
+height: auto;
+}
   #container{
     grid-template-columns: repeat(3,1fr);
     grid-template-areas:
     'header header header'
     'nav nav nav'
     '. img .'
-    '. project1 .'
+    'project1 project1 project1'
     '. text1 .'
-    '. project2 .'
+    'project2 project2 project2'
     '. text2 .'
-    '. project3 .'
+    'project3 project3 project3'
     '. text3 .'
-    '. project4 .'
+    'project4 project4 project4'
     '. text4 .'
     '. link .'
     '. footer .'
@@ -195,6 +199,6 @@ a{
 }
 #project1, #project2, #project3, #project4
 {
-  width: 90%;
+  height: auto;
 }
 }
