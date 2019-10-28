@@ -1,10 +1,13 @@
-$(document).ready(function(){
-  $('.menu-trigger').click(function(){
+
+$(document).ready(function() {
+  $('.menu-trigger').click(function() {
     $('nav ul').slideToggle(500);
   });
-  $(window).resize(function(){
-    if ( $(window).wid() > 1000){
-      $('nav ul').removeAttr('style');
-    })
-  })
-})
+
+
+  $(window).resize(function() {
+	   if (  $(window).width() > 1000 ) {
+		$('nav ul').removeAttr('style');
+	 }
+	});
+});
