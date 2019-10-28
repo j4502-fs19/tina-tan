@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('nav ul').slideToggle(500);
   });
   $(window).resize(function(){
-    if ( $(window).wid() > 700){
+    if ( $(window).wid() > 1000){
       $('nav ul').removeAttr('style');
     })
   })

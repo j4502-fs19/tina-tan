@@ -20,8 +20,6 @@ h2 {
   display: grid;
   grid-template-columns:repeat(4, 1fr);
   grid-template-areas:
-  'header header header header'
-  'nav nav nav nav'
   '. img img .'
   '. project1 project2 .'
   '. text1 text2 .'
@@ -45,21 +43,22 @@ h2 {
 .nav{
     grid-area: nav;
 }
-#nav-list, #link, .menucontainer {
+nav ul, #link, .menucontainer {
   padding:0;
   list-style-type: none;
 }
-#nav-list {
+nav ul {
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
   width: 100%;
 }
-#nav-list li {
+nav ul li {
+  display: block;
   border-bottom: 1px solid #fff2e6;
   font-family: 'Bree Serif', serif;
   width: 25%;
 }
-#nav-list a:link, #nav-list a:visited {
+nav ul a:link, nav ul a:visited {
   display: block;
   padding: 3px;
   color: white;
@@ -68,11 +67,11 @@ h2 {
   text-align: center;
   text-decoration: none;
 }
- #nav-list a:hover {
+ nav ul a:hover {
    color:#ffa64d;
    background-color: #ffe6cc;
  }
- #nav-list a:active {
+ nav ul a:active {
    color: #663300;
  }
  #link{
@@ -97,10 +96,6 @@ img{
 a{
   text-decoration: none;
 }
-
-.header{
-  grid-area:header;
-}
 .footer{
   grid-area: footer;
 }
@@ -118,7 +113,7 @@ a{
 }
 #project1, #project2, #project3, #project4
 {
-  height: 340px;
+  height: auto;
 }
 #text1{
   grid-area:text1;
@@ -132,8 +127,16 @@ a{
 #text4{
   grid-area:text4;
 }
+.menu-trigger {
+    display: none;
+}
+header h1{
+  text-align: center;
+  width: 170px;
+  margin: 0 auto;
+}
 /*tablet*/
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
   #container{
     grid-template-columns: repeat(4,1fr);
     grid-template-areas:
@@ -149,6 +152,17 @@ a{
     ;
     align-items: center;
   }
+  .menu-trigger{
+    display: block;
+    margin-left: 10px;
+    font-size: 1.75em;
+    width: 2em;
+    color: #ffa64d;
+  }
+  nav ul {
+    display: none;
+  }
+
 }
 
 /*mobile*/
@@ -175,12 +189,12 @@ height: auto;
     '. footer .'
     ;
   }
-#nav-list{
+nav ul{
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-#nav-list li{
+nav ul li{
   width: 100%;
 }
 .menucontainer li{
@@ -200,5 +214,8 @@ height: auto;
 #project1, #project2, #project3, #project4
 {
   height: auto;
+}
+nav ul {
+  display: none;
 }
 }
