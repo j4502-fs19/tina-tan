@@ -20,7 +20,7 @@ h2 {
   display: grid;
   grid-template-columns:repeat(4, 1fr);
   grid-template-areas:
-  '. img img .'
+  '. img intro .'
   '. project1 project2 .'
   '. text1 text2 .'
   '. project3 project4 .'
@@ -54,7 +54,6 @@ nav ul {
 }
 nav ul li {
   display: block;
-  border-bottom: 1px solid #fff2e6;
   font-family: 'Bree Serif', serif;
   width: 25%;
 }
@@ -74,6 +73,12 @@ nav ul a:link, nav ul a:visited {
  nav ul a:active {
    color: #663300;
  }
+ #intro{
+   grid-area:intro;
+   margin: auto;
+ }
+
+ /* #link is already deleted */
  #link{
    grid-area:link;
  }
@@ -89,6 +94,8 @@ nav ul a:link, nav ul a:visited {
    color:#ffa64d;
    background-color: #ffe6cc;
  }
+ /* #link is already deleted */
+
 img{
   border: none;
   height: 340px;
@@ -134,18 +141,6 @@ header h1{
   text-align: center;
   width: 170px;
   margin: 0 auto;
-}
-i {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  margin-left: 10px;
-  margin-bottom: 3px;
 }
 /*desktop end*/
 
