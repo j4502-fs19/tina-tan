@@ -135,6 +135,18 @@ header h1{
   width: 170px;
   margin: 0 auto;
 }
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
 /*desktop end*/
 
 /*tablet*/
