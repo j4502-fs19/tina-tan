@@ -10,4 +10,10 @@ $(document).ready(function() {
 		$('nav ul').removeAttr('style');
 	 }
 	});
+
+  $(window).resize(function() {
+     if (  $(window).width() < 1000 ) {
+    $('nav ul').removeAttr('style');
+   }
+  });
 });
