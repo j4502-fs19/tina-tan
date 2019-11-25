@@ -42,10 +42,7 @@ h4{
   margin: 20px auto;
   grid-area: img;
 }
-.nav{
-    grid-area: nav;
-}
-nav ul, #link, .menucontainer {
+nav ul, .menucontainer {
   padding:0;
   list-style-type: none;
 }
@@ -80,21 +77,6 @@ nav ul a:link, nav ul a:visited {
    grid-area:intro;
    margin: auto;
  }
-
- /* #link is already deleted */
- #link{
-   grid-area:link;
- }
- #link a:link, #link a:visited{
-   padding: 3px;
-   display: block;
-   text-decoration: none;
-   color: #663300;
-   font-weight: bold;
-   font-family: 'Bree Serif', serif;
- }
- /* #link is already deleted */
-
 img{
   border: none;
   height: 340px;
@@ -177,22 +159,22 @@ a:hover {
 /*desktop end*/
 
 /*tablet*/
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1130px) {
   #container{
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-areas:
-    '. img .'
-    '. intro . '
-    '. project1 .'
-    '. project2 .'
-    '. project3 .'
-    '. project4 .'
-    '. footer .'
+    '. img img .'
+    '. intro intro . '
+    '. project1 text1 .'
+    '. project2 text2 .'
+    '. project3 text3 .'
+    '. project4 text4 .'
+    '. footer footer.'
     ;
     align-items: center;
   }
-  #text1, #text2, #text3, #text4{
-    display: none;
+  nav li a{
+  border-bottom: 1px solid white;
   }
   header h1{
     font-size: 90px;
@@ -220,16 +202,50 @@ a:hover {
    #intro{
      width: 90%;
    }
+   #text1, #text2, #text3, #text4 {
+     width: 240px;
+   }
+   #resume{
+     max-height: 800px;
+   }
+   #resumeimg{
+     width: 100%;
+   }
+   #contactinfo{
+     padding-top:50px;
+   }
+   #contactinfo h2{
+     margin-bottom: 20px;
+   }
 }
 /*tablet end*/
 
 /*mobile*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 604px) {
+  #container{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas:
+    'img'
+    'intro'
+    'project1'
+    'text1'
+    'project2'
+    'text2'
+    'project3'
+    'text3'
+    'project4'
+    'text4'
+    'footer'
+    ;
+    align-items: center;
+  }
 img{
 width: 100%;
 height: auto;
 }
-
+#img {
+  width: 70%;
+}
 nav ul{
   display: flex;
   flex-direction: column;
@@ -248,16 +264,33 @@ nav ul li{
 #contact{
   margin: 3px 0;
 }
-#link a:hover {
-  color:#ffa64d;
-  background-color: #ffe6cc;
-}
 #project1, #project2, #project3, #project4
 {
   height: auto;
 }
 nav ul {
   display: none;
+}
+header h1{
+  font-size: 60px;
+}
+#resume{
+  max-height: none;
+}
+#resumeimg{
+  width: 80%;
+}
+#contactinfo{
+  font-size: 0.9em;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+}
+#project1{
+  margin-top: 0;
+}
+#intro{
+  margin-bottom: 25px;
 }
 }
 /*mobile end*/
