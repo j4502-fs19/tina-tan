@@ -267,21 +267,32 @@ a:hover {
   #img {
   width: 70%;
   }
-  nav ul{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  nav li a{
+  border-bottom: 1px solid white;
+  }
+  header h1{
+    font-size: 90px;
+  }
+  .menu-trigger{
+    display: block;
+    margin-left: 10px;
+    font-size: 1.75em;
+    width: 2em;
+    color: #ffa64d;
+  }
+  nav ul {
+    display: none;
   }
   nav ul li{
-  width: 100%;
+    width: 100%;
   }
-  .menucontainer li{
-  margin: 0 auto;
-  width: 100%;
-  }
-  .menucontainer ul a{
-  text-decoration: none;
-  }
+  .menu-trigger a:hover {
+     color:#ffa64d;
+     background-color: #ffe6cc;
+   }
+   nav ul a:active {
+     color: #663300;
+   }
   #contact{
   margin: 3px 0;
   }
