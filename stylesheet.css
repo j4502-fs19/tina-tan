@@ -1,10 +1,12 @@
 /*desktop*/
 
 body{
-background-color:#ffe6cc;
-  font-size: 16px;
+  background-color:#ffe6cc;
+  font-size: 18px;
   color:#663300;
   font-family:'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 h1 {
   font-family: 'Righteous', cursive;
@@ -12,6 +14,11 @@ h1 {
   font-size: 35px;
 }
 h2 {
+  font-family: 'Righteous', cursive;
+  font-weight: bold;
+  font-size: 28px;
+}
+h3 {
   font-family: 'Righteous', cursive;
   font-weight: bold;
   font-size: 20px;
@@ -22,7 +29,6 @@ h4{
 #contact{
   margin:14px 0;
   padding: 2px 0;
-  background-color: #ffdab3;
 }
 #img{
   margin: 20px auto;
@@ -87,7 +93,10 @@ footer{
 #project4{
   grid-area: project4;
 }
-#project1, #project2, #project3, #project4
+#project5{
+  grid-area: project5;
+}
+#project1, #project2, #project3, #project4, #project5
 {
   height: auto;
   margin: 25px 15px 0 15px;
@@ -142,6 +151,33 @@ a:hover {
   margin: auto 20px;
   padding-top: 50px;
 }
+#storycontainer{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+}
+.byline {
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+    }
+.audio{
+  width: 80%;
+  margin: 0 auto;
+}
+.text, .photo{
+  font-size: 18px;
+  text-align: left;
+  width: 80%;
+  margin:0 auto;
+}
+.photo img{
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
 @media screen and (min-width: 1130px){
 #container, #container2{
   text-align: center;
@@ -153,6 +189,7 @@ a:hover {
   '. text1 text2 .'
   '. project3 project4 .'
   '. text3 text4 .'
+  '. project5 . . '
   '. footer footer .'
   ;
   grid-column-gap: 10px;
@@ -235,6 +272,15 @@ a:hover {
    }
    #contactinfo h2{
      margin-bottom: 20px;
+   }
+   .audio{
+     width: 90%;
+   }
+   .text, .photo{
+     width: 90%;
+   }
+   .photo{
+     font-size: 16px;
    }
 }
 /*tablet end*/
@@ -322,6 +368,15 @@ a:hover {
   }
   #intro{
   margin-bottom: 25px;
+  }
+  .audio{
+    width: 97%;
+  }
+  .text, .photo{
+    width: 97%;
+  }
+  .photo{
+    font-size: 16px;
   }
 }
 /*mobile end*/
