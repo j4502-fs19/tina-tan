@@ -23,9 +23,6 @@ h3 {
   font-weight: bold;
   font-size: 20px;
 }
-h4{
-  color:#ffa64d;
-}
 #contact{
   margin:14px 0;
   padding: 2px 0;
@@ -147,7 +144,7 @@ a:hover {
 #contactinfo{
   grid-area:intro;
   text-align: left;
-  width: 280px;
+  width: 300px;
   margin: auto 20px;
   padding-top: 50px;
 }
@@ -268,7 +265,7 @@ a:hover {
      width: 100%;
    }
    #contactinfo{
-     padding-top:50px;
+     padding:50px 0;
    }
    #contactinfo h2{
      margin-bottom: 20px;
@@ -358,10 +355,10 @@ a:hover {
   width: 80%;
   }
   #contactinfo{
-  font-size: 0.9em;
+  font-size: 1em;
   width: 70%;
   margin: auto;
-  padding: 10px;
+  padding: 20px 0 50px 0;
   }
   #project1{
   margin-top: 0;
