@@ -202,7 +202,10 @@ a:hover {
     height: 100%;
   }
 /*responsive videoWrapper*/
-
+.infographic img{
+  width: 30%;
+  height: auto;
+}
 @media screen and (min-width: 1130px){
 #container, #container2{
   text-align: center;
