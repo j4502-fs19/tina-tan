@@ -169,6 +169,14 @@ a:hover {
   width: 80%;
   margin:0 auto;
 }
+.text h4{
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.text{
+  padding-bottom: 30px;
+}
 .photo img{
   width: 100%;
   height: auto;
