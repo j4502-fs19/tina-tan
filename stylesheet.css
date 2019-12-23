@@ -78,8 +78,16 @@ footer{
   text-align: center;
   margin: 10px auto 20px auto;
 }
+#line{
+  grid-area: line;
+  text-align: center;
+}
+#line HR{
+  width:90%;
+  size:1;
+}
 #project1{
-  grid-area : project1;
+  grid-area: project1;
 }
 #project2{
   grid-area: project2;
@@ -96,7 +104,7 @@ footer{
 #project1, #project2, #project3, #project4, #project5
 {
   height: auto;
-  margin: 25px 15px 0 15px;
+  margin: 10px 15px;
 }
 #text1, #text2, #text3, #text4{
   width: 90%;
@@ -114,6 +122,18 @@ footer{
 #text4{
   grid-area:text4;
 }
+#intro2{
+  grid-area:intro2;
+}
+#intro3{
+  grid-area:intro3;
+}
+#intro3 p a{
+  font-style: italic;
+}
+#intro4{
+  grid-area:intro4;
+}
 .menu-trigger {
     display: none;
 }
@@ -125,6 +145,9 @@ header h1{
 #intro{
   width: 65%;
   text-align: left;
+}
+#intro a{
+  font-size:2em;
 }
 a:link, a:visited{
   color:#663300;
@@ -214,13 +237,17 @@ a:hover {
   width: 50%;
   height: auto;
 }
+#storycontainer HR{
+  width: 80%;
+}
 @media screen and (min-width: 1130px){
-#container, #container2{
+#container {
   text-align: center;
   display: grid;
   grid-template-columns:repeat(4, 1fr);
   grid-template-areas:
   '. img intro .'
+  '. line line .'
   '. project1 project2 .'
   '. text1 text2 .'
   '. project3 project4 .'
@@ -231,6 +258,23 @@ a:hover {
   grid-column-gap: 10px;
   grid-row-gap:10px;
 }
+#container2{
+  text-align: center;
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-areas:
+  '. intro2 intro2 .'
+  '. project1 project2 .'
+  '. intro3 intro3 .'
+  '. project3 project4 .'
+  '. intro4 intro4 .'
+  '. project5 . . '
+  '. footer footer .'
+  ;
+  grid-column-gap: 10px;
+  grid-row-gap:10px;
+}
+
 }
 /*desktop end*/
 
@@ -242,6 +286,7 @@ a:hover {
     grid-template-areas:
     '. img img .'
     '. intro intro . '
+    '. line line .'
     '. project1 text1 .'
     '. project2 text2 .'
     '. project3 text3 .'
@@ -323,12 +368,13 @@ a:hover {
 
 /*mobile*/
 @media screen and (max-width: 800px) {
-  #container, #container2 {
+  #container {
     grid-template-columns: repeat(1,1fr);
     display: grid;
     grid-template-areas:
     'img'
     'intro'
+    'line'
     'project1'
     'text1'
     'project2'
@@ -337,6 +383,23 @@ a:hover {
     'text3'
     'project4'
     'text4'
+    'footer'
+    ;
+    align-items: center;
+    text-align: center;
+  }
+  #container2 {
+    grid-template-columns: repeat(1,1fr);
+    display: grid;
+    grid-template-areas:
+    'intro2'
+    'project1'
+    'project2'
+    'intro3'
+    'project3'
+    'project4'
+    'intro4'
+    'project5'
     'footer'
     ;
     align-items: center;
