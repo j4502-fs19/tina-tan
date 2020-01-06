@@ -240,6 +240,9 @@ a:hover {
 #storycontainer HR{
   width: 80%;
 }
+.covertext{
+  width: 
+}
 @media screen and (min-width: 1130px){
 #container {
   text-align: center;
