@@ -155,9 +155,13 @@ a:link, a:visited{
 a:hover {
   color:#ffa64d;
 }
+#intro3 p a{
+  color:#663300;
+}
 #resume{
   grid-area:img;
   max-height: 390px;
+  padding-bottom: 10px;
 }
 #resumeimg{
   height: 100%;
