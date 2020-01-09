@@ -204,6 +204,9 @@ a:hover {
 .text{
   padding-bottom: 30px;
 }
+.text a, #resume a{
+  color:#ffa64d;
+}
 .photo img{
   width: 100%;
   height: auto;
@@ -241,11 +244,38 @@ a:hover {
   width: 50%;
   height: auto;
 }
-#storycontainer HR{
-  width: 80%;
+#issuestory{
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-areas:
+  'main main main sidebar';
+  margin-right: 80px;
 }
-.covertext{
-  width:
+#issuestory h2,h3{
+  text-align: center;
+}
+#issuestory h3{
+  padding: 0 5px;
+}
+#main{
+  grid-area: main;
+}
+#sidebar{
+  grid-area:sidebar;
+}
+#sidebar .text{
+  width: 100%;
+  font-size: 16px;
+}
+#sidebar .infographic{
+text-align:center;
+}
+#sidebar .infographic img{
+  width: 100%;
+  height: auto;
+}
+#storycontainer HR{
+  width: 100%;
 }
 @media screen and (min-width: 1130px){
 #container {
