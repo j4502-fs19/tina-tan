@@ -155,6 +155,9 @@ a:link, a:visited{
 a:hover {
   color:#ffa64d;
 }
+#container a:link, #container a:visited{
+  color:#ffa64d;
+}
 #intro3 p a{
   color:#663300;
 }
