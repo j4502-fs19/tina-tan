@@ -249,7 +249,6 @@ a:hover {
   grid-template-columns:repeat(4, 1fr);
   grid-template-areas:
   'main main main sidebar';
-  margin-right: 80px;
 }
 #issuestory h2,h3{
   text-align: center;
@@ -277,6 +276,7 @@ text-align:center;
 #storycontainer HR{
   width: 100%;
 }
+/*desktop*/
 @media screen and (min-width: 1130px){
 #container {
   text-align: center;
@@ -311,6 +311,9 @@ text-align:center;
   grid-column-gap: 10px;
   grid-row-gap:10px;
 }
+#issuestory{
+  margin-right: 80px;
+}
 
 }
 /*desktop end*/
@@ -343,6 +346,12 @@ text-align:center;
     '. footer .'
     ;
     align-items: center;
+  }
+  #container3 {
+      align-items: center;
+  }
+  #issuestory{
+    margin: 0 10px;
   }
   #img{
     margin: 0 auto;
