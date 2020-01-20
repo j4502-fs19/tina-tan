@@ -73,7 +73,7 @@ img{
 a{
   text-decoration: none;
 }
-footer{
+#footer{
   grid-area: footer;
   text-align: center;
   margin: 10px auto 20px auto;
@@ -84,7 +84,7 @@ footer{
 }
 #line HR{
   width:90%;
-  size:1;
+  resize:1;
 }
 #project1{
   grid-area: project1;
@@ -160,13 +160,7 @@ a:hover {
 }
 #resume{
   grid-area:img;
-  max-height: 390px;
   padding-bottom: 10px;
-}
-#resumeimg{
-  height: 100%;
-  width: 80%;
-  margin-top: 30px;
 }
 #contactinfo{
   grid-area:intro;
@@ -276,6 +270,7 @@ text-align:center;
 #storycontainer HR{
   width: 100%;
 }
+
 /*desktop*/
 @media screen and (min-width: 1130px){
 #container, #container3 {
@@ -289,7 +284,6 @@ text-align:center;
   '. text1 text2 .'
   '. project3 project4 .'
   '. text3 text4 .'
-  '. project5 . . '
   '. footer footer .'
   ;
   grid-column-gap: 10px;
@@ -310,6 +304,24 @@ text-align:center;
   ;
   grid-column-gap: 10px;
   grid-row-gap:10px;
+}
+#container3 {
+  text-align: center;
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-areas:
+  '. img intro .'
+  '. footer footer .'
+  ;
+  grid-column-gap: 10px;
+  grid-row-gap:10px;
+  height: 550px;
+}
+#resumeimg{
+  max-height: 375px;
+  height: 100%;
+  width: auto;
+  margin-top: 30px;
 }
 #issuestory{
   margin-right: 80px;
@@ -348,7 +360,13 @@ text-align:center;
     align-items: center;
   }
   #container3 {
-      align-items: center;
+    text-align: center;
+  }
+  #resumeimg{
+    width: 60%;
+    height: auto;
+    max-height: 50px;
+    margin: 0 auto;
   }
   #issuestory{
     margin: 0 10px;
@@ -500,7 +518,7 @@ text-align:center;
   max-height: none;
   }
   #resumeimg{
-  width: 80%;
+  width: 60%;
   }
   #contactinfo{
   font-size: 1em;
