@@ -142,6 +142,12 @@ header h1{
   margin: 0 auto;
   font-size: 100px;
 }
+header a:link, header a:visited{
+  color:#663300;
+}
+header a:hover{
+  color:#ffa64d;
+}
 #intro{
   width: 80%;
   text-align: left;
@@ -149,15 +155,14 @@ header h1{
 #intro a{
   font-size:2em;
 }
-a:link, a:visited{
+#intro a:hover{
   color:#663300;
 }
-a:hover {
+a:link, a:visited{
   color:#ffa64d;
 }
-#container h2{
-  color:#ffa64d;
-  font-size: 24px;
+a:hover {
+  color:#663300;
 }
 #intro3 p a{
   color:#663300;
@@ -330,7 +335,9 @@ text-align:center;
 #issuestory{
   margin-right: 80px;
 }
-
+#container h2{
+  font-size: 24px;
+}
 }
 /*desktop end*/
 
