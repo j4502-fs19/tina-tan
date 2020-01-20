@@ -348,28 +348,39 @@ text-align:center;
     align-items: center;
   }
   #container2 {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     display: grid;
     grid-template-areas:
-    '. project1 .'
-    '. project2 .'
-    '. project3 .'
-    '. project4 .'
-    '. footer .'
+    'intro2'
+    'project1'
+    'project2'
+    'intro3'
+    'project3'
+    'project4'
+    'intro4'
+    'project5'
+    'footer'
     ;
     align-items: center;
+    text-align: center;
   }
   #container3 {
     text-align: center;
   }
   #resumeimg{
-    width: 60%;
+    width: 55%;
     height: auto;
-    max-height: 50px;
+    margin: 20px auto;
+  }
+  #contactinfo{
+    padding:50px 0;
     margin: 0 auto;
   }
+  #contactinfo h2{
+    margin-bottom: 20px;
+  }
   #issuestory{
-    margin: 0 10px;
+    margin: 0 20px;
   }
   #img{
     margin: 0 auto;
@@ -405,18 +416,6 @@ text-align:center;
    }
    #text1, #text2, #text3, #text4 {
      width: 240px;
-   }
-   #resume{
-     max-height: 800px;
-   }
-   #resumeimg{
-     width: 100%;
-   }
-   #contactinfo{
-     padding:50px 0;
-   }
-   #contactinfo h2{
-     margin-bottom: 20px;
    }
    .audio{
      width: 90%;
@@ -469,6 +468,9 @@ text-align:center;
     align-items: center;
     text-align: center;
   }
+  #container3 {
+    text-align: center;
+  }
   img{
   width: 100%;
   height: auto;
@@ -516,6 +518,7 @@ text-align:center;
   }
   #resume{
   max-height: none;
+  margin-top: 20px;
   }
   #resumeimg{
   width: 60%;
@@ -523,7 +526,7 @@ text-align:center;
   #contactinfo{
   font-size: 1em;
   width: 70%;
-  margin: auto;
+  margin: 0 auto;
   padding: 20px 0 50px 0;
   }
   #project1{
@@ -540,6 +543,19 @@ text-align:center;
   }
   .photo{
     font-size: 16px;
+  }
+  #issuestory{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    grid-template-areas:
+    'main'
+    'sidebar';
+    width: 90%;
+    margin: 0 auto;
+  }
+  #storycontainer{
+    width: 90%;
+    margin:0 auto;
   }
 }
 /*mobile end*/
