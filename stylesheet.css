@@ -278,7 +278,7 @@ text-align:center;
 }
 /*desktop*/
 @media screen and (min-width: 1130px){
-#container {
+#container, #container3 {
   text-align: center;
   display: grid;
   grid-template-columns:repeat(4, 1fr);
