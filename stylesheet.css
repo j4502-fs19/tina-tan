@@ -155,8 +155,9 @@ a:link, a:visited{
 a:hover {
   color:#ffa64d;
 }
-#container a:link, #container a:visited{
+#container h2{
   color:#ffa64d;
+  font-size: 24px;
 }
 #intro3 p a{
   color:#663300;
