@@ -23,6 +23,9 @@ h3 {
   font-weight: bold;
   font-size: 20px;
 }
+#container h3{
+  font-size: 24px;
+}
 #contact{
   margin:14px 0;
   padding: 2px 0;
@@ -253,7 +256,7 @@ a:hover {
   grid-template-areas:
   'main main main sidebar';
 }
-#issuestory h2,h3{
+#issuestory h2, #issuestory h3{
   text-align: center;
 }
 #issuestory h3{
@@ -334,9 +337,6 @@ text-align:center;
 }
 #issuestory{
   margin-right: 80px;
-}
-#container h2{
-  font-size: 24px;
 }
 }
 /*desktop end*/
@@ -437,6 +437,7 @@ text-align:center;
    .photo{
      font-size: 16px;
    }
+
 }
 /*tablet end*/
 
