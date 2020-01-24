@@ -365,11 +365,6 @@ text-align:center;
     grid-template-areas:
     '. img img .'
     '. intro intro . '
-    '. line line .'
-    '. project1 text1 .'
-    '. project2 text2 .'
-    '. project3 text3 .'
-    '. project4 text4 .'
     '. footer footer.'
     ;
     align-items: center;
@@ -394,6 +389,20 @@ text-align:center;
   #container3 {
     text-align: center;
   }
+  #container4 {
+    grid-template-columns: repeat(4,1fr);
+    display: grid;
+    grid-template-areas:
+    '. project1 text1 .'
+    '. project2 text2 .'
+    '. project3 text3 .'
+    '. project4 text4 .'
+    '. project5 text5 .'
+    '. footer footer.'
+    ;
+    align-items: center;
+  }
+
   #resumeimg{
     width: 55%;
     height: auto;
