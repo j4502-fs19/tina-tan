@@ -424,15 +424,15 @@ text-align:center;
     text-align: center;
   }
   #container4 {
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(6,1fr);
     display: grid;
     grid-template-areas:
-    '. project1 text1 .'
-    '. project2 text2 .'
-    '. project3 text3 .'
-    '. project4 text4 .'
-    '. project5 text5 .'
-    '. footer footer.'
+    '. project1 text1 text1 text1 .'
+    '. project2 text2 text2 text2 .'
+    '. project3 text3 text3 text3 .'
+    '. project4 text4 text4 text4 .'
+    '. project5 text5 text5 text5 .'
+    '. footer footer footer footer .'
     ;
     align-items: center;
   }
