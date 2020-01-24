@@ -474,15 +474,6 @@ text-align:center;
     grid-template-areas:
     'img'
     'intro'
-    'line'
-    'project1'
-    'text1'
-    'project2'
-    'text2'
-    'project3'
-    'text3'
-    'project4'
-    'text4'
     'footer'
     ;
     align-items: center;
@@ -506,6 +497,25 @@ text-align:center;
     text-align: center;
   }
   #container3 {
+    text-align: center;
+  }
+  #container4 {
+    grid-template-columns: repeat(1,1fr);
+    display: grid;
+    grid-template-areas:
+    'project1'
+    'text1'
+    'project2'
+    'text2'
+    'project3'
+    'text3'
+    'project4'
+    'text4'
+    'project5'
+    'text5'
+    'footer'
+    ;
+    align-items: center;
     text-align: center;
   }
   img{
