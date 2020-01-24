@@ -11,7 +11,7 @@ body{
 h1 {
   font-family: 'Righteous', cursive;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 38px;
 }
 h2 {
   font-family: 'Righteous', cursive;
@@ -21,10 +21,7 @@ h2 {
 h3 {
   font-family: 'Righteous', cursive;
   font-weight: bold;
-  font-size: 20px;
-}
-#container h3{
-  font-size: 24px;
+  font-size: 22px;
 }
 #contact{
   margin:14px 0;
@@ -109,8 +106,8 @@ a{
   height: auto;
   margin: 10px 15px;
 }
-#text1, #text2, #text3, #text4{
-  width: 90%;
+#text1, #text2, #text3, #text4, #text5{
+  width: 88%;
   margin: 0 auto;
 }
 #text1{
@@ -124,6 +121,9 @@ a{
 }
 #text4{
   grid-area:text4;
+}
+#text5{
+  grid-area:text5;
 }
 #intro2{
   grid-area:intro2;
@@ -152,7 +152,7 @@ header a:hover{
   color:#ffa64d;
 }
 #intro{
-  width: 80%;
+  width: 90%;
   text-align: left;
 }
 #intro a{
@@ -282,21 +282,19 @@ text-align:center;
 #storycontainer HR{
   width: 100%;
 }
-
+.sectionheader{
+  text-align: center;
+  padding-top:10px;
+}
 /*desktop*/
 @media screen and (min-width: 1130px){
-#container, #container3 {
+#container {
   text-align: center;
   display: grid;
-  grid-template-columns:repeat(4, 1fr);
+  grid-template-columns:repeat(6, 1fr);
   grid-template-areas:
-  '. img intro .'
-  '. line line .'
-  '. project1 project2 .'
-  '. text1 text2 .'
-  '. project3 project4 .'
-  '. text3 text4 .'
-  '. footer footer .'
+  '. img img intro intro .'
+  '. footer footer footer footer .'
   ;
   grid-column-gap: 10px;
   grid-row-gap:10px;
@@ -328,6 +326,24 @@ text-align:center;
   grid-column-gap: 10px;
   grid-row-gap:10px;
   height: 550px;
+}
+#container4 {
+  text-align: center;
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-areas:
+  '. img intro .'
+  '. line line .'
+  '. project1 project2 .'
+  '. text1 text2 .'
+  '. project3 project4 .'
+  '. text3 text4 .'
+  '. project5 . .'
+  '. text5 . .'
+  '. footer footer .'
+  ;
+  grid-column-gap: 10px;
+  grid-row-gap:10px;
 }
 #resumeimg{
   max-height: 375px;
