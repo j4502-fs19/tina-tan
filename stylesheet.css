@@ -354,6 +354,38 @@ text-align:center;
 #issuestory{
   margin-right: 80px;
 }
+/* hoverable dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffe6cc;
+  width: 98%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  font-size: 0.8em;
+}
+
+.dropdown-content a:hover {background-color: #fff6ee;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffe6cc;
+  color:#ffa64d;
+}
+/* hoverable dropdown*/
+
 }
 /*desktop end*/
 
@@ -421,9 +453,6 @@ text-align:center;
   #img{
     margin: 0 auto;
   }
-  nav li a{
-  border-bottom: 1px solid white;
-  }
   header h1{
     font-size: 90px;
   }
@@ -434,6 +463,9 @@ text-align:center;
     width: 2em;
     color: #ffa64d;
   }
+  nav li a{
+    border-bottom: 1px solid white;
+    }
   nav ul {
     display: none;
   }
@@ -446,6 +478,9 @@ text-align:center;
    }
    nav ul a:active {
      color: #663300;
+   }
+   .dropdown-content {
+     display: none;
    }
    #intro{
      width: 90%;
@@ -559,6 +594,9 @@ text-align:center;
   }
   nav ul {
   display: none;
+  }
+  .dropdown-content {
+    display: none;
   }
   header h1{
   font-size: 60px;
